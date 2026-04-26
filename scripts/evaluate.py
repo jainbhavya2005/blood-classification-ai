@@ -179,11 +179,19 @@ class ModelEvaluator:
         print("✅ EVALUATION COMPLETE!")
         print("="*60)
 
-
 if __name__ == "__main__":
-    # Update this with your saved model path
-    model_path = os.path.join('..', 'saved_models', 'malaria_cnn_20260426_073437.h5')
-    dataset_path = os.path.join('..', 'dataset')
+    import glob
+
+    # Automatically find model file
+    model_files = glob.glob("/content/blood-classification-ai/saved_models/*.h5")
     
+    if len(model_files) == 0:
+        raise FileNotFoundError("❌ No model file found in saved_models folder")
+    
+    model_path = model_files[0]
+    print(f"✅ Using model: {model_path}")
+
+    dataset_path = "/content/blood-classification-ai/dataset"
+
     evaluator = ModelEvaluator(model_path, dataset_path, img_size=64)
     evaluator.run_complete_evaluation()
