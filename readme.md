@@ -1,10 +1,10 @@
 # Blood Cell Classification for Malaria Detection
 
 This project was collaboratively developed by:
-Bhavya
-Ehsen
-Pratham
-Anhad
+*Bhavya
+*Ehsen
+*Pratham
+*Anhad
 
 A CNN-based system to classify red blood cell images as healthy or malaria-infected. Built as part of an automated medical diagnostics project.
 Takes microscope images of blood cells and tells you if they're infected with malaria or not. Achieved 96% accuracy on test data.
@@ -13,14 +13,22 @@ Download the malaria cell images dataset from Kaggle:
 https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria
 Should have around 27,000 images total.
 
-s
+## 🛠 Tech Stack
 
-# Evaluation
+* Python
+* TensorFlow / Keras
+* OpenCV
+* NumPy & Pandas
+* Matplotlib & Seaborn
+* Scikit-learn
 
-Shows you:
-- Confusion matrix
-- Accuracy metrics
-- Sample predictions
+🚀 Features
+*CNN-based malaria detection using deep learning
+*~96% test accuracy
+*Confusion matrix and classification report
+*Sample predictions visualization
+*Error analysis of misclassified images
+*Lightweight model (~2.6MB)
   
 
 # Results
