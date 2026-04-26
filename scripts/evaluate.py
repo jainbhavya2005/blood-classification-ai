@@ -182,7 +182,7 @@ class ModelEvaluator:
 
 if __name__ == "__main__":
     # Update this with your saved model path
-    model_path = os.path.join('..', 'saved_models', 'malaria_cnn_20251122_220933.h5')
+    model_path = os.path.join('..', 'saved_models', 'malaria_cnn_20260426_073437.h5')
     dataset_path = os.path.join('..', 'dataset')
     
     evaluator = ModelEvaluator(model_path, dataset_path, img_size=64)
